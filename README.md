@@ -9,12 +9,12 @@ The pipeline streams simulated user activity data (like logins, clicks, and logo
 User Activity (Producer) → Kafka Topic → Consumer (Python) → BigQuery Table
 
 Technologies Used
-Linux – Environment setup and command-line operations
-Apache Kafka – Real-time data streaming platform
-Zookeeper – Manages Kafka cluster coordination
-Python – For producer and consumer scripts
-Google Cloud Platform (GCP) – For hosting BigQuery
-BigQuery – For storing and querying streamed data
+Linux – Environment setup and command-line operations,
+Apache Kafka – Real-time data streaming platform,
+Zookeeper – Manages Kafka cluster coordination,
+Python – For producer and consumer scripts,
+Google Cloud Platform (GCP) – For hosting BigQuery,
+BigQuery – For storing and querying streamed data,
 Service Accounts (IAM) – For secure authentication
 
 Skills Demonstrated
