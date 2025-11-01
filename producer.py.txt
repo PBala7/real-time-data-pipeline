@@ -1,0 +1,24 @@
+from kafka import KafkaProducer
+import json
+import time
+import random
+
+# Initialize Kafka producer
+producer = KafkaProducer(
+    bootstrap_servers=['localhost:9092'],
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+)
+
+# Example list of user activities
+activities = ["login", "logout", "view_page", "click_button", "add_to_cart"]
+
+while True:
+    data = {
+        "user_id": random.randint(1, 100),
+        "activity": random.choice(activities),
+        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+    }
+    # ✅ Make sure topic name matches the consumer
+    producer.send('user_activity', value=data)
+    print(f"Sent: {data}")
+    time.sleep(2)
