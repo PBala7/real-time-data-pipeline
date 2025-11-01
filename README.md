@@ -19,3 +19,6 @@ Service Accounts (IAM) – For secure authentication
 
 Skills Demonstrated
 Kafka · Python · BigQuery · SQL · Linux · Real-Time Data Processing · GCP · Data Engineering
+
+Google looker Studio
+Real Time Data Pipeline - Visit link[https://lookerstudio.google.com/reporting/81007a6c-3271-4264-a95a-6b4e1a6ab000]
